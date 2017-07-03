@@ -8,10 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "KitchenDelegate.h"
+#import "Kitchen.h"
+#import "Pizza.h"
+#import "DeliveryService.h"
 
 @interface Manager : NSObject <KitchenDelegate>
 
+@property(strong,nonatomic) DeliveryService *deliveryService;
+
 // singleton method
 + (Manager*)sharedInstance;
+
+
 
 @end

@@ -31,4 +31,33 @@
     return [[Pizza alloc]initWithSize:size andToppings:@[@"pepperoni, ham, chorizo, bacon"]];
 }
 
+- (NSString*)description
+{
+    // size
+    NSMutableString *pizzaString = [[NSMutableString alloc]init];
+    NSString *size;
+    if (self.size == 0)
+    {
+        size = @"small";
+    }
+    else if (self.size == 1)
+    {
+        size = @"medium";
+    }
+    else if (self.size == 2)
+    {
+        size = @"large";
+    }
+    [pizzaString appendString:size];
+    
+    //toppings
+    for (NSString *topping in self.toppings)
+    {
+        NSString *appendTopping = [NSString stringWithFormat:@" %@",topping];
+        [pizzaString appendString:appendTopping];
+    }
+    
+    return pizzaString;
+}
+
 @end

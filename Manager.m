@@ -38,6 +38,9 @@
     return NO;
 }
 
-
+- (void)kitchenDidMakePizza:(Pizza*)pizza
+{
+    [self.deliveryService deliverPizza:pizza];
+}
 
 @end

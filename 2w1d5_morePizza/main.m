@@ -13,6 +13,7 @@
 #import "Pizza.h"
 #import "Manager.h"
 #import "CheeryManager.h"
+#import "DeliveryService.h"
 
 int main(int argc, const char * argv[])
 {
@@ -23,6 +24,7 @@ int main(int argc, const char * argv[])
         // replace with singletons
         //Manager *manager = [Manager new];
         //CheeryManager *cheerymanager = [CheeryManager new];
+        DeliveryService *deliveryService = [DeliveryService new];
         
         BOOL runLoop = YES;
         
@@ -46,6 +48,8 @@ int main(int argc, const char * argv[])
                 // use singleton
                 Manager *manager = [Manager sharedInstance];
                 restaurantKitchen.delegate = manager;
+                // facade pattern
+                manager.deliveryService = deliveryService;
                 selectPizza = YES;
             }
             else if ([managerChoice isEqualToString:@"2"])
@@ -53,6 +57,8 @@ int main(int argc, const char * argv[])
                 // use singleton
                 CheeryManager *cheerymanager = [CheeryManager sharedInstance];
                 restaurantKitchen.delegate = cheerymanager;
+                // facade pattern
+                cheerymanager.deliveryService = deliveryService;
                 selectPizza = YES;
             }
             else if ([managerChoice isEqualToString:@"3"])
@@ -142,6 +148,19 @@ int main(int argc, const char * argv[])
             {
                 NSLog(@"Manager selection not valid, please try again");
             }
+            
+            // show delivered orders
+            NSMutableArray *ordersDelivered = [deliveryService deliveredOrders];
+            NSLog(@"Delivery service orders:\n");
+            for (Pizza *order in ordersDelivered)
+            {
+                // override description in Pizza.m
+                NSLog(@"> %@", [order description]);
+            }
+            
+            
+            
+            
         }
     }
     return 0;

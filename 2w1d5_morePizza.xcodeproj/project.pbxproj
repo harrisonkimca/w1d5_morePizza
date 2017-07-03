@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88985EB31F09C27E0083ED73 /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 88985EB21F09C27E0083ED73 /* DeliveryService.m */; };
+		88985EB61F09C28F0083ED73 /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 88985EB51F09C28F0083ED73 /* DeliveryCar.m */; };
 		88F263FD1F09BBAD009B3E17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F263FC1F09BBAD009B3E17 /* main.m */; };
 		88F264051F09BBC3009B3E17 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F264041F09BBC3009B3E17 /* InputCollector.m */; };
 		88F264081F09BC0B009B3E17 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F264071F09BC0B009B3E17 /* Manager.m */; };
@@ -28,6 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		88985EB11F09C27E0083ED73 /* DeliveryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryService.h; sourceTree = "<group>"; };
+		88985EB21F09C27E0083ED73 /* DeliveryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryService.m; sourceTree = "<group>"; };
+		88985EB41F09C28F0083ED73 /* DeliveryCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryCar.h; sourceTree = "<group>"; };
+		88985EB51F09C28F0083ED73 /* DeliveryCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryCar.m; sourceTree = "<group>"; };
 		88F263F91F09BBAD009B3E17 /* 2w1d5_morePizza */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2w1d5_morePizza; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F263FC1F09BBAD009B3E17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88F264031F09BBC3009B3E17 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputCollector.h; path = ../InputCollector.h; sourceTree = "<group>"; };
@@ -78,6 +84,10 @@
 				88F264071F09BC0B009B3E17 /* Manager.m */,
 				88F264091F09BC16009B3E17 /* CheeryManager.h */,
 				88F2640A1F09BC16009B3E17 /* CheeryManager.m */,
+				88985EB11F09C27E0083ED73 /* DeliveryService.h */,
+				88985EB21F09C27E0083ED73 /* DeliveryService.m */,
+				88985EB41F09C28F0083ED73 /* DeliveryCar.h */,
+				88985EB51F09C28F0083ED73 /* DeliveryCar.m */,
 				88F264121F09BC5D009B3E17 /* KitchenDelegate.h */,
 				88F2640F1F09BC35009B3E17 /* Kitchen.h */,
 				88F264101F09BC35009B3E17 /* Kitchen.m */,
@@ -148,7 +158,9 @@
 			files = (
 				88F264051F09BBC3009B3E17 /* InputCollector.m in Sources */,
 				88F2640B1F09BC16009B3E17 /* CheeryManager.m in Sources */,
+				88985EB61F09C28F0083ED73 /* DeliveryCar.m in Sources */,
 				88F264111F09BC35009B3E17 /* Kitchen.m in Sources */,
+				88985EB31F09C27E0083ED73 /* DeliveryService.m in Sources */,
 				88F264081F09BC0B009B3E17 /* Manager.m in Sources */,
 				88F2640E1F09BC24009B3E17 /* Pizza.m in Sources */,
 				88F263FD1F09BBAD009B3E17 /* main.m in Sources */,
@@ -280,6 +292,7 @@
 				88F264021F09BBAD009B3E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

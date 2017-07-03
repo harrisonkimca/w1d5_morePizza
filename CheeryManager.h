@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "KitchenDelegate.h"
+#import "Kitchen.h"
+#import "Pizza.h"
+#import "DeliveryService.h"
 
 @interface CheeryManager : NSObject <KitchenDelegate>
+
+@property(strong,nonatomic) DeliveryService *deliveryService;
 
 // singleton method
 + (CheeryManager*)sharedInstance;
